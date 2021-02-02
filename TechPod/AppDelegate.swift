@@ -11,8 +11,6 @@ import AVFoundation
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("カテゴリ設定失敗") //エラー処理
         }
         
+        //sessionのアクティブ化
         do{
             try session.setActive(true)
         }
